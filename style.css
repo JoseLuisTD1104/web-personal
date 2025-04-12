@@ -1,0 +1,33 @@
+/* Fondo negro y texto blanco base */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Elimina márgenes del header/nav */
+  header, nav {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Espacios entre secciones */
+  section {
+    padding: 60px 20px;
+  }
+  
+  /* Enlaces */
+  a {
+    color: #b7c2c0;
+    text-decoration: none;
+  }
+  
+  /* Efecto al pasar el mouse dentro de un hipervinculo */ 
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
