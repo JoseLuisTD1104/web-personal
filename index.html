@@ -10,94 +10,125 @@
 
   <!-- Navegación -->
   <header>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#publicaciones">Publicaciones</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#sobremi">Sobre mí</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+    <div class="navbar-wrapper">
+      <nav class="navbar">
+        <!-- Logo -->
+        <div class="nav-left">
+          <div class="Logo">
+            <img src="/content/images/Diseño sin título (3).png" alt="Logo">
+          </div>
+        </div>
+
+        <!-- Enlace Inicio solo en móvil/tablet -->
+        <div class="nav-inicio-mobile">
+          <a href="#inicio" class="nav-inicio">Inicio</a>
+        </div>
+
+        <!-- Enlaces -->
+        <div class="nav-center">
+          <ul class="nav-links">
+            <li><a href="#inicio" class="nav-inicio-desktop">Inicio</a></li>
+            <li><a href="#publicaciones">Publicaciones</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#sobremi">Sobre mí</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Menú hamburguesa -->
+        <div class="nav-right">
+          <button class="nav-toggle" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <!-- Sección: Inicio -->
-  <section id="inicio">
-    <h1>No soy experto. Soy aprendiz constante.</h1>
-    <p>Aquí empieza mi historia, donde la curiosidad se convierte en código.</p>
-    <p>Explorando el mundo de la inteligencia artificial, la ciberseguridad y el análisis de datos.</p>
-  </section>
-  
+  <!-- Contenido principal centrado -->
+  <main class="container">
+    <!-- Sección: Inicio -->
+    <section id="inicio">
+      <h1>No soy experto. Soy aprendiz constante.</h1>
+      <p>Aquí empieza mi historia, donde la curiosidad se convierte en código.</p>
+      <p>Explorando el mundo de la inteligencia artificial, la ciberseguridad y el análisis de datos.</p>
+    </section>
 
-  <!-- Sección: Publicaciones con carrusel -->
-  <section id="publicaciones">
-    <h2>Publicaciones</h2>
-
-    <div class="carrusel-publicaciones">
-      <div class="tarjeta">
-        <h3>¿Qué es el hashing en ciberseguridad?</h3>
-        <p>#Ciberseguridad</p>
+    <!-- Sección: Publicaciones -->
+    <section id="publicaciones">
+      <h2>Publicaciones</h2>
+      <div class="carrusel-publicaciones">
+        <div class="tarjeta">
+          <h3>¿Qué es el hashing en ciberseguridad?</h3>
+          <p>#Ciberseguridad</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Datos de Spotify con Python</h3>
+          <p>#Análisis de datos</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Redes neuronales para principiantes</h3>
+          <p>#IA</p>
+        </div>
       </div>
-      <div class="tarjeta">
-        <h3>Datos de Spotify con Python</h3>
-        <p>#Análisis de datos</p>
+      <div class="ver-mas">
+        <a href="publicaciones.html">Ver todas las publicaciones</a>
       </div>
-      <div class="tarjeta">
-        <h3>Redes neuronales para principiantes</h3>
-        <p>#IA</p>
+    </section>
+
+    <!-- Sección: Proyectos -->
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="carrusel-proyectos">
+        <div class="tarjeta">
+          <h3>Clasificador de sentimientos</h3>
+          <p>Proyecto con IA básica y Python.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Dashboard energético</h3>
+          <p>Visualización de datos en Power BI.</p>
+        </div>
+        <div class="tarjeta">
+          <h3>Escaneo de red local</h3>
+          <p>Script en bash + nmap.</p>
+        </div>
       </div>
-    </div>
-
-    <div class="ver-mas">
-      <a href="publicaciones.html">Ver todas las publicaciones</a>
-    </div>
-  </section>
-
-  <!-- Sección: Proyectos con carrusel -->
-  <section id="proyectos">
-    <h2>Proyectos</h2>
-
-    <div class="carrusel-proyectos">
-      <div class="tarjeta">
-        <h3>Clasificador de sentimientos</h3>
-        <p>Proyecto con IA básica y Python.</p>
+      <div class="ver-mas">
+        <a href="proyectos.html">Ver todos los proyectos</a>
       </div>
-      <div class="tarjeta">
-        <h3>Dashboard energético</h3>
-        <p>Visualización de datos en Power BI.</p>
-      </div>
-      <div class="tarjeta">
-        <h3>Escaneo de red local</h3>
-        <p>Script en bash + nmap.</p>
-      </div>
-    </div>
+    </section>
 
-    <div class="ver-mas">
-      <a href="proyectos.html">Ver todos los proyectos</a>
-    </div>
-  </section>
+    <!-- Sección: Sobre mí -->
+    <section id="sobremi">
+      <h2>Sobre mí</h2>
+      <p>Estudiante apasionado por las tecnologías emergentes. Este es mi espacio para compartir lo que voy aprendiendo y construir mi portafolio.</p>
+    </section>
 
-  <!-- Sección: Sobre mí -->
-  <section id="sobremi">
-    <h2>Sobre mí</h2>
-    <p>Estudiante apasionado por las tecnologías emergentes. Este es mi espacio para compartir lo que voy aprendiendo y construir mi portafolio.</p>
-  </section>
+    <!-- Sección: Contacto -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Puedes escribirme a:</p>
+      <ul>
+        <li>Email: tunombre@correo.com</li>
+        <li>GitHub: <a href="https://github.com/tuusuario" target="_blank">tuusuario</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank">tuusuario</a></li>
+      </ul>
+    </section>
 
-  <!-- Sección: Contacto -->
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Puedes escribirme a:</p>
-    <ul>
-      <li>Email: tunombre@correo.com</li>
-      <li>GitHub: <a href="https://github.com/tuusuario" target="_blank">tuusuario</a></li>
-      <li>LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank">tuusuario</a></li>
-    </ul>
-  </section>
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Tu Nombre. Todos los derechos reservados.</p>
+    </footer>
+  </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Tu Nombre. Todos los derechos reservados.</p>
-  </footer>
+  <!-- Script para menú responsive -->
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const center = document.querySelector(".nav-center");
+    toggle.addEventListener("click", () => {
+      center.classList.toggle("open");
+    });
+  </script>
 
 </body>
 </html>

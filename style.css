@@ -1,4 +1,4 @@
-/* Fondo negro y texto blanco base */
+/* === ESTILOS BASE === */
 body {
     background-color: #000000;
     color: #ffffff;
@@ -8,26 +8,233 @@ body {
     line-height: 1.6;
   }
   
-  /* Elimina márgenes del header/nav */
+  /* === ESTRUCTURA GENERAL === */
   header, nav {
     margin: 0;
     padding: 0;
   }
   
-  /* Espacios entre secciones */
-  section {
-    padding: 60px 20px;
+  /* === WRAPPER CENTRADO PARA NAVBAR EN ESCRITORIO === */
+  .navbar-wrapper {
+    width: 100%;
   }
   
-  /* Enlaces */
-  a {
-    color: #b7c2c0;
+  /* === NAVBAR === */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #0d0d0d;
+    padding: 1rem 1rem;
+    border: 1px solid #1e1e1e;
+    overflow: hidden;
+  }
+  
+  /* === LOGO === */
+  .Logo img {
+    height: 40px;
+    object-fit: contain;
+    display: block;
+  }
+  
+  /* === ESTRUCTURA NAV === */
+  .nav-left {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 1rem;
+  }
+  
+  .nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-width: 0;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+  }
+  
+  /* === LINKS === */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links a {
+    color: #A2A2A2;
     text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    white-space: nowrap;
   }
   
-  /* Efecto al pasar el mouse dentro de un hipervinculo */ 
+  .nav-links a:hover {
+    color: #ffffff;
+  }
   
-  a:hover {
-    text-decoration: underline;
+  nav ul li a.active {
+    color: #fff;
+    border-bottom: 2px solid #A2A2A2;
+  }
+  
+  /* === INICIO === */
+  .nav-inicio,
+  .nav-inicio-desktop {
+    color: #A2A2A2;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+  
+  .nav-inicio:hover,
+  .nav-inicio-desktop:hover {
+    color: #ffffff;
+  }
+  
+  /* === HAMBURGER === */
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .nav-toggle span {
+    display: block;
+    height: 2px;
+    background-color: #A2A2A2;
+    border-radius: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  /* === CONTAINER CENTRADO === */
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  /* === RESPONSIVE === */
+  @media (max-width: 1024px) {
+    .navbar {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .nav-center {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-end;
+      background-color: #0d0d0d;
+    }
+  
+    .nav-center.open {
+      display: flex;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem 2rem;
+    }
+  
+    .nav-links li {
+      text-align: right;
+    }
+  
+    .nav-toggle {
+      display: flex;
+      margin-left: auto;
+    }
+  
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .nav-inicio-mobile {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      margin-left: auto;
+      padding-right: 1rem;
+    }
+  
+    .nav-inicio-desktop {
+      display: none;
+    }
+  
+    .container {
+      padding: 0 1rem;
+    }
+  }
+  
+  /* === SOLO MODO ESCRITORIO === */
+  @media (min-width: 1025px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .navbar {
+      width: 100%;
+      max-width: 1200px;
+    }
+  
+    .container {
+      max-width: 960px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 2rem;
+      box-sizing: border-box;
+    }
+  
+    .container > section,
+    .container > footer {
+      width: 100%;
+    }
+  
+    .nav-inicio-mobile {
+      display: none;
+    }
+  
+    .nav-links {
+      gap: 1.5rem;
+    }
+  
+    .nav-inicio-desktop {
+      display: inline;
+      margin-right: 0;
+    }
   }
   
