@@ -179,7 +179,7 @@ body {
     max-width: 90%;
     text-align: center;
     z-index: 2;
-    padding: 0 1rem; /* 👈 SOLO padding horizontal */
+    padding: 0 1rem; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -243,8 +243,8 @@ body {
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
-    width: 100%; /* Asegura uso completo del espacio disponible */
-    max-width: 100%; /* Limita para que no se desborde */
+    width: 100%; 
+    max-width: 100%; 
   }
   
   .btn {
@@ -257,9 +257,9 @@ body {
     text-decoration: none;
     font-size: clamp(1rem, 1.2vw, 1.2rem);
     transition: background 0.3s ease;
-    width: 90%; /* Controla su tamaño en pantallas pequeñas */
-    max-width: 280px; /* Un límite razonable para que no sean gigantes en tablets */
-    margin: 0 auto; /* Centrado horizontal */
+    width: 90%; 
+    max-width: 280px; 
+    margin: 0 auto; 
     text-align: center;
   }
   
@@ -350,6 +350,22 @@ body {
   .navbar {
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 2rem 2.5rem; 
+    height: auto;
+    gap: 2rem;
+  }
+
+  .Logo img {
+    height: 50px;
+  }
+
+  .nav-left img {
+    height: 50px; 
+  }
+
+  .nav-inicio-mobile {
+    font-size: 1.1rem;
+    padding-right: 2rem;
   }
 
   .nav-center {
@@ -377,8 +393,12 @@ body {
   .nav-toggle {
     display: flex;
     margin-left: auto;
+    transform: scale(1.6); 
+    margin-left: 1rem;
+ 
   }
 
+  
   .nav-right {
     display: flex;
     align-items: center;
@@ -397,6 +417,14 @@ body {
     display: none;
   }
 
+  
+  .nav-links a {
+    font-size: 1.2rem;
+    padding: 0.8rem 0;
+  }
+
+
+  
   .container {
     padding: 0 1rem;
   }
@@ -436,7 +464,7 @@ body {
   .botones {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente en columna */
+    align-items: center; 
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
@@ -445,7 +473,7 @@ body {
   .btn {
      width: 90%;
     max-width: 300px;
-    margin: 0 auto; /* Asegura que esté centrado */
+    margin: 0 auto; 
     padding: 0.75rem 1.25rem;
     font-size: 1rem;
     border-radius: 30px;
@@ -463,52 +491,60 @@ body {
   }
 }
 
-/* === RESPONSIVE: TABLETS (768px a 1024px) === */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .hero-video {
-    height: 90vh;
-    padding: 3rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    text-align: center;
+   .hero-video {
+    height: 62vh;
+  }
+  
+  #publicaciones {
+    margin-top: 0rem;
+    padding-top: 0.1rem;
+  }
+  .hero-content {
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+
+  #publicaciones {
+    margin-top: 0;
+    padding-top: 0.2rem;
   }
 
   .hero-content {
-    padding: 1rem 2rem;
     max-width: 90%;
+    padding: 2rem;
+    transform: translate(-50%, -50%);
   }
 
   .hero-content h1,
   .hero-content h1.frase-unida {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: 2.8rem;
     line-height: 1.3;
-    white-space: normal;
-    word-break: break-word;
+    margin-bottom: 2rem;
   }
 
   .subtitulo {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-  }
-
-  .botones {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
   }
 
   .btn {
-    max-width: 250px;
-    width: 100%;
-    padding: 1rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 30px;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    max-width: 300px;
+    width: 90%;
+  }
+
+  .botones {
+    margin-top: 2rem;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 }
+
 
 /* === RESPONSIVE: ESCRITORIO (1025px en adelante) === */
 @media (min-width: 1025px) {
@@ -518,35 +554,39 @@ body {
     align-items: center;
   }
 
+  .hero-video {
+    height: 58vh;
+  }
+  
   .navbar-wrapper {
-    width: 100%; /* Asegura que el wrapper ocupe todo el ancho */
+    width: 100%; 
     display: flex;
-    justify-content: center; /* Centra el navbar dentro del wrapper */
+    justify-content: center; 
   }
 
   .navbar {
     max-width: 1200px;
-    margin: 0 auto; /* Centra el navbar en la página */
+    margin: 0 auto; 
     display: flex;
-    justify-content: center; /* ❗ Centra los elementos hijos */
+    justify-content: center; 
     align-items: center;
-    gap: 4rem; /* Aumenta el espacio entre logo y menú */
+    gap: 4rem; 
   }
 
   .nav-left {
-    /* display: flex; align-items: center; */ /* Mantenemos estos */
-    margin-right: auto; /* Empuja el logo a la izquierda */
+    
+    margin-right: auto; 
   }
 
   .nav-center {
     display: flex;
     align-items: center;
-    gap: 2rem; /* Espacio entre enlaces */
-    margin-left: auto; /* Empuja el menú a la derecha */
+    gap: 2rem; 
+    margin-left: auto; 
   }
 
   .nav-right {
-    display: none; /* Oculta hamburguesa */
+    display: none; 
   }
   
   .container {
@@ -614,4 +654,317 @@ body {
     margin-right: 0;
   }
 }
+
+/* Menú responsive hamburguesa (solo para móviles y tablets hasta 1024px) */
+@media (max-width: 1024px) {
+  .nav-center {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start; 
+    background-color: #0d0d0d;
+    width: 100%;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    padding: 1rem 2rem;
+    z-index: 999;
+  }
+  .nav-center.open {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+  .nav-links a {
+  text-align: left; 
+  display: block;
+  width: 100%;
+  color: #fff;
+}
+
+  .nav-toggle {
+    display: flex;
+    z-index: 1000;
+  }
+
+  .nav-links li:first-child {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* --- HERO SECTION --- */
+  .hero-content h1,
+  .hero-content h1.frase-unida {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+
+  
+  .nav-center {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #0d0d0d;
+  }
+
+  .nav-center.open {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .nav-links li {
+    text-align: right;
+  }
+
+  .nav-inicio-mobile {
+    display: flex;
+    align-items: center;
+    gap: 0; 
+    padding-right: 0;
+    
+  }
+
+  .nav-inicio {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+  
+  }
+
+  .subtitulo {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+
+  .botones {
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    font-size: 1rem;
+    max-width: 280px;
+    padding: 0.75rem 1.2rem;
+    width: 90%;
+  }
+
+  /* --- NAVBAR --- */
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+
+  .nav-left img {
+    height: 32px;
+  }
+
+  .nav-inicio-mobile {
+    font-size: 0.9rem;
+  }
+
+  .nav-toggle {
+    width: 14px;
+    height: 10px;
+  }
+
+  .nav-toggle span {
+    height: 2px;
+  }
+
+  /* --- MENÚ HAMBURGUESA --- */
+  .nav-center {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.5rem 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+  }
+
+}
+
+/* === Carrusel Publicaciones === */
+
+#publicaciones {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.carrusel-publicaciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 1rem 0;
+}
+
+.tarjeta {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  width: 280px; /* o el ancho que desees */
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.tarjeta h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+/* Botón Ver más */
+.tarjeta .btn-ver-mas {
+  margin-top: auto;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 1rem;
+  transition: background 0.3s ease;
+  width: 90%; 
+  max-width: 240px; 
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.tarjeta .btn-ver-mas:hover {
+  background-color: #333;
+}
+
+
+
+.carrusel-publicaciones::-webkit-scrollbar {
+  height: 8px;
+}
+.carrusel-publicaciones::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 10px;
+}
+
+
+.tarjeta:hover {
+  transform: scale(1.03);
+}
+
+
+.ver-mas {
+  margin-top: 2rem;
+}
+
+.ver-mas a {
+  color: white;
+  border: 1px solid white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.ver-mas a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.tarjeta a.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Sección "ver más" general */
+.ver-mas {
+  margin-top: 3rem;
+}
+
+.ver-mas a {
+  color: white;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+.btn-ver-mas {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 260px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+
+@media (max-width: 767px) {
+  .hero-video {
+    height: 62vh;
+  }
+  
+  
+  .hero-content {
+    margin-bottom: 0.1rem; /* Más cerca */
+    padding-bottom: 0.1rem;
+  }
+
+  #publicaciones {
+    margin-top: 0rem;
+    padding-top: 0.1rem;
+  }
+  .hero-content {
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+
+  #publicaciones {
+    margin-top: 0;
+    padding-top: 0.2rem;
+  }
+}
+
+
 
