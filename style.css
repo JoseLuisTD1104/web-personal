@@ -343,6 +343,14 @@ body {
     text-align: center;
     border-radius: 30px;
   }
+
+  #publicaciones {
+    margin-bottom: 1rem; /* Reduces la separación inferior */
+  }
+
+  #proyectos {
+    margin-top: 1rem; /* Opcional si quieres asegurar suavidad en la unión */
+  }
 }
 
 /* === RESPONSIVE: MÓVILES Y TABLETS (hasta 1024px) === */
@@ -543,6 +551,17 @@ body {
     display: flex;
     flex-direction: column;
   }
+
+  .hero-content {
+    margin-bottom: 0rem !important;
+    padding-bottom: 0rem !important;
+  }
+
+  #publicaciones {
+    margin-top: -1rem !important;
+    padding-top: 0rem !important;
+  }
+  
 }
 
 
@@ -966,5 +985,224 @@ body {
   }
 }
 
+/* === Carrusel Proyectos === */
 
+/* === Carrusel Proyectos (igual que Publicaciones) === */
+#proyectos {
+  padding: 4rem 1rem;
+  text-align: center;
+}
 
+.carrusel-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 1rem 0;
+}
+
+.carrusel-proyectos .tarjeta {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  width: 280px;
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.carrusel-proyectos .tarjeta h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.carrusel-proyectos .tarjeta p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.carrusel-proyectos .tarjeta:hover {
+  transform: scale(1.03);
+}
+
+/* Sobre mi */ 
+
+#sobremi {
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: transparent;
+}
+
+.sobremi-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ccc;
+}
+
+.sobremi-foto {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.sobremi-foto:hover {
+  transform: scale(1.05);
+}
+
+.sobremi-contenido p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+#sobremi h2 {
+  margin-bottom: 2.5rem; /* aumenta la separación entre el título y el contenido */
+}
+
+.sobremi-foto {
+  margin-top: 0.5rem; /* por si necesitas afinar más */
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  margin-bottom: 1.3rem; 
+}
+
+/* Footer */ 
+.footer-nuevo {
+  background-color: #000;
+  color: #aaa;
+  padding: 3rem 1rem 1rem;
+  border-top: 1px solid #1a1a1a;
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeInFooter 0.8s ease-in-out;
+  border-top: 1px solid rgba(255, 255, 255, 0.08); /* línea suave */
+  background: linear-gradient(to bottom, #000 0%, #0a0a0a 100%)
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.footer-izquierda {
+  flex: 1;
+  max-width: 500px;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  animation: fadeUp 1s ease-in-out forwards;
+}
+
+.footer-descripcion {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #bbb;
+  animation: fadeUp 1.2s ease-in-out forwards;
+}
+
+.footer-derecha {
+  flex: 0 0 auto;
+  text-align: right;
+}
+
+.footer-enlaces {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  animation: fadeUp 1.3s ease-in-out forwards;
+}
+
+.footer-enlaces li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.footer-enlaces li a:hover {
+  color: #fff;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: #666;
+  animation: fadeUp 1.6s ease-in-out forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInFooter {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-izquierda,
+  .footer-derecha {
+    text-align: center;
+  }
+
+  .footer-enlaces {
+    align-items: center;
+  }
+}
+
+.footer-nuevo {
+  animation: fadeUpFooter 1s ease forwards;
+}
+
+@keyframes fadeUpFooter {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
