@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Título de la Publicación</title>
+  <link rel="stylesheet" href="/styles/Publicaciones.css" />
+</head>
+<body>
+
+  <!-- Navegación -->
+  <header>
+    <div class="navbar-wrapper">
+      <nav class="navbar">
+        <!-- Logo -->
+        <div class="nav-left">
+          <div class="Logo">
+            <img src="/content/images/Diseño sin título (3).png" alt="Logo">
+          </div>
+        </div>
+
+        <!-- Enlace Inicio solo en móvil/tablet -->
+        <div class="nav-inicio-mobile">
+          <a href="#inicio" class="nav-inicio">Inicio</a>
+        </div>
+
+        <!-- Enlaces -->
+        <div class="nav-center">
+          <ul class="nav-links">
+            <li><a href="/index.html#inicio" class="nav-inicio-desktop">Inicio</a></li>
+            <li><a href="/index.html#publicaciones">Publicaciones</a></li>
+            <li><a href="/index.html#proyectos">Proyectos</a></li>
+            <li><a href="/index.html#sobremi">Sobre mí</a></li>
+            <li><a href="/index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Menú hamburguesa -->
+        <div class="nav-right">
+          <button class="nav-toggle" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero con imagen oscura y texto encima -->
+  <header class="hero-publicacion" style="background-image: url('/content/images/Publicaciones/hero-content/Redes-neuronales-para-principiantes-15-abril-2025/Redes\ neuronales\ para\ principiantes\ 15\ abril\ 2025.jpg')">
+    <div class="overlay"></div>
+    <div class="contenido-hero">
+      <p class="categoria">#IA</p>
+      <h1 class="titulo-publicacion">Redes neuronales para principiantes</h1>
+      <p class="autor">por Jose Luis • 16 abril 2025</p>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="contenido-publicacion">
+    <article  class="publicacion-articulo">
+      <p>
+        Las redes neuronales son una de las bases fundamentales del aprendizaje profundo (deep learning).
+        En esta publicación, te mostraré cómo funcionan, sus componentes esenciales y un ejemplo simple con Python.
+      </p>
+
+      <figure>
+        <img src="/content/images/Publicaciones/content page/Redes neuronales para principiantes 15 abril 2025/Redes neuronales para principiantes 15 abril 2025 imagen 1 post.png" alt="Ejemplo de red neuronal" style="width: 100%; border-radius: 8px;" />
+        <center><figcaption>Ejemplo visual de una red neuronal artificial</figcaption></center>
+      </figure>
+    
+      <h2>¿Cómo funcionan?</h2>
+      <p>
+        Están compuestas por capas de "neuronas" conectadas entre sí. Cada neurona recibe entradas, las procesa mediante una función de activación y genera una salida que se transmite a otras neuronas.
+      </p>
+    
+      <h3>Capas comunes:</h3>
+      <ul>
+        <li><strong>Capa de entrada:</strong> recibe los datos iniciales.</li>
+        <li><strong>Capas ocultas:</strong> realizan el procesamiento complejo.</li>
+        <li><strong>Capa de salida:</strong> entrega el resultado final.</li>
+      </ul>
+    
+      <!-- Espacio para insertar un video de YouTube -->
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 1.5rem; border-radius: 8px;">
+        <iframe src="https://www.youtube.com/embed/aircAruvnKk" 
+                title="Redes neuronales explicadas para principiantes"
+                frameborder="0" 
+                allowfullscreen 
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        </iframe>
+      </div>
+    
+      <h2>¿Para qué se utilizan?</h2>
+      <p>
+        Las redes neuronales se aplican en diversas áreas como el reconocimiento de voz, visión por computadora, análisis de datos, predicciones financieras y mucho más.
+      </p>
+    
+      <!-- Espacio para una segunda imagen -->
+      <figure>
+        <img src="/content/images/Publicaciones/content page/Redes neuronales para principiantes 15 abril 2025/Redes neuronales para principiantes 15 abril 2025 imagen 2 post.webp" alt="Aplicaciones de las redes neuronales" style="width: 100%; border-radius: 8px;" />
+        <center><figcaption>Aplicaciones comunes de redes neuronales en la vida real</figcaption></center>
+      </figure>
+    
+      <h2>¿Cómo comenzar a aprender?</h2>
+      <p>
+        Puedes empezar por entender la lógica básica detrás de las funciones de activación, pérdida y entrenamiento. Existen muchas librerías como <code>TensorFlow</code> y <code>PyTorch</code> que facilitan su implementación.
+      </p>
+    
+    </article>
+  </main>
+
+  <footer class="footer-nuevo">
+    <!-- Puedes reutilizar tu footer actual aquí -->
+  </footer>
+
+  <!-- Script del menú hamburguesa -->
+  <script src="../../script.js" defer></script>
+
+
+</body>
+</html>

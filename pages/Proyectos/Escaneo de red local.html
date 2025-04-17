@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard energético</title>
+  <link rel="stylesheet" href="/styles/Proyectos.css">
+</head>
+<body>
+
+        <div class="navbar-wrapper">
+          <nav class="navbar">
+            <!-- Logo -->
+            <div class="nav-left">
+              <div class="Logo">
+                <img src="/content/images/Diseño sin título (3).png" alt="Logo">
+              </div>
+            </div>
+    
+            <!-- Enlace Inicio solo en móvil/tablet -->
+            <div class="nav-inicio-mobile">
+              <a href="#inicio" class="nav-inicio">Inicio</a>
+            </div>
+    
+            <!-- Enlaces -->
+            <div class="nav-center">
+              <ul class="nav-links">
+                <li><a href="/index.html#inicio" class="nav-inicio-desktop">Inicio</a></li>
+                <li><a href="/index.html#publicaciones">Publicaciones</a></li>
+                <li><a href="/index.html#proyectos">Proyectos</a></li>
+                <li><a href="/index.html#sobremi">Sobre mí</a></li>
+                <li><a href="/index.html#contacto">Contacto</a></li>
+              </ul>
+            </div>
+    
+            <!-- Menú hamburguesa -->
+            <div class="nav-right">
+              <button class="nav-toggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+              </button>
+            </div>
+          </nav>
+        </div>
+   
+
+    <header class="hero-publicacion" style="background-image: url('/content/images/Proyectos/content-hero/Escaneo-de-red-local-16-abril-2025/Escaneo\ de\ red\ local\ 16-abril-2025.png')">
+    <div class="overlay"></div>
+    <div class="contenido-hero">
+      <p class="categoria">#IA</p>
+      <h1 class="titulo-publicacion">Dashboard energético</h1>
+      <p class="autor">por Jose Luis • 16 abril 2025</p>
+    </div>
+  </header>
+
+  <main class="contenido-publicacion">
+    <!-- Breve descripción -->
+    <article>
+      <p>
+        Dashboard energético es una herramienta interactiva diseñada para visualizar y analizar el consumo de energía de forma clara y eficiente. Este proyecto permite monitorear métricas clave como el uso diario, mensual y por categoría de dispositivos, facilitando la toma de decisiones orientadas al ahorro energético y la sostenibilidad. Gracias a sus visualizaciones dinámicas y su estructura intuitiva, el dashboard es ideal tanto para usuarios individuales como para empresas que buscan optimizar su eficiencia energética.
+      </p>
+
+      <!-- Vista tipo GitHub -->
+      <div class="estructura-github">
+        <ul class="file-list">
+          <li onclick="toggle(this)">📁 .github
+            <ul class="nested">
+              <li data-path="/archivos/ISSUE_TEMPLATE.md" onclick="verArchivo(this)">📄 ISSUE_TEMPLATE.md</li>
+              <li data-path="/archivos/CONTRIBUTING.md" onclick="verArchivo(this)">📄 CONTRIBUTING.md</li>
+            </ul>
+          </li>
+          <li onclick="toggle(this)">📁 src
+            <ul class="nested">
+              <li data-path="/archivos/app.py" onclick="verArchivo(this)">📄 app.py</li>
+              <li data-path="/archivos/agents.py" onclick="verArchivo(this)">📄 agents.py</li>
+              <li onclick="toggle(this)">📁 utils
+                <ul class="nested">
+                  <li data-path="/archivos/helpers.py" onclick="verArchivo(this)">📄 helpers.py</li>
+                  <li data-path="/archivos/logger.py" onclick="verArchivo(this)">📄 logger.py</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li data-path="/content/Files/Readme.txt" onclick="verArchivo(this)">📄 README.md</li>
+          <li data-path="/archivos/LICENSE" onclick="verArchivo(this)">📄 LICENSE</li>
+          <li data-path="/archivos/pyproject.toml" onclick="verArchivo(this)">📄 pyproject.toml</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Sección de pestañas -->
+    <section class="seccion-tabs">
+      <div class="tabs">
+        <button class="tab active" onclick="mostrarContenido('readme')">📄 Descripción</button>
+        <button class="tab" onclick="mostrarContenido('license')">⚖️ Licencia</button>
+      </div>
+
+      <div class="tab-content" id="readme" style="display: block;">
+        <p>
+            Este proyecto tiene como objetivo ofrecer una visualización clara e interactiva del consumo energético en tiempo real. A través de gráficos dinámicos y métricas detalladas, el dashboard permite identificar patrones de uso, detectar anomalías y fomentar decisiones informadas para un consumo más eficiente y sostenible.
+        </p>
+        <ul>
+          <li>✅ Monitorización en tiempo real del consumo energético</li>
+          <li>📊 Visualización por zonas, dispositivos o periodos de tiempo</li>
+          <li>🌱 Foco en eficiencia y sostenibilidad energética</li>
+          <li>⚙️ Integración con sensores y datos históricos</li>
+        </ul>
+      </div>
+
+      <div class="tab-content" id="license" style="display: none;">
+        <pre>
+MIT License
+
+Copyright (c) 2025 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction...
+
+        </pre>
+      </div>
+    </section>
+  </main>
+
+  <script src="/scripts/Proyectos.js"></script>
+
+</body>
+</html>

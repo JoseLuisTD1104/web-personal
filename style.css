@@ -1238,3 +1238,28 @@ body {
     margin-top: 1rem;
   }
 }
+
+.visor-emergente {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 50vh;
+  overflow-y: auto;
+  background-color: #111;
+  color: #eee;
+  padding: 1rem 2rem;
+  border-top: 1px solid #333;
+  font-family: monospace;
+  z-index: 9999;
+}
+.visor-emergente .cerrar {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
