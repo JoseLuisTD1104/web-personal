@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos realizadas</title>
+  <link rel="stylesheet" href="https://joseluistd1104.github.io/web-personal/styles/ver_todas_los_proyectos.css" />
+</head>
+<body>
+
+  <!-- Navbar completo -->
+  <header>
+    <div class="navbar-wrapper">
+      <nav class="navbar">
+        <div class="nav-left">
+          <div class="Logo">
+            <img src="https://joseluistd1104.github.io/web-personal/content/images/Logo.png" alt="Logo">
+          </div>
+        </div>
+        <div class="nav-center">
+          <ul class="nav-links">
+            <li><a href="https://joseluistd1104.github.io/web-personal/index.html#inicio">Inicio</a></li>
+            <li><a href="https://joseluistd1104.github.io/web-personal/index.html#publicaciones">Publicaciones</a></li>
+            <li><a href="https://joseluistd1104.github.io/web-personal/index.html#proyectos">Proyectos</a></li>
+            <li><a href="https://joseluistd1104.github.io/web-personal/index.html#sobremi">Sobre mí</a></li>
+            <li><a href="https://joseluistd1104.github.io/web-personal/index.html#footer">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+        <!-- Menú hamburguesa -->
+        <div class="nav-right">
+          <button class="nav-toggle" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero content con imagen de fondo -->
+  <section class="hero-publicaciones">
+    <div class="contenido-hero">
+      <h1>Proyectos realizados.</h1>
+    </div>
+  </section>
+
+  <!-- Sección principal -->
+  <main class="seccion-publicaciones">
+    <div class="buscador">
+      <input type="text" id="searchInput" placeholder="Buscar publicación...">
+      <select id="categoryFilter">
+        <option value="todas">Todas las categorías</option>
+        <option value="Ciberseguridad">Ciberseguridad</option>
+        <option value="Análisis de datos">Análisis de datos</option>
+        <option value="IA">IA</option>
+      </select>
+      <input type="date" id="dateFilter">
+    </div>
+
+    <section class="contenedor-publicaciones">
+      <!-- Tarjeta 1 -->
+      <article class="tarjeta-publicacion">
+        <h2>¿Qué es el hashing en ciberseguridad?</h2>
+        <p><span class="icono">📅</span> <span class="fecha">2025-04-01</span></p>
+        <p><span class="icono">🏷️</span> <span class="categoria">Ciberseguridad</span></p>
+        <a href="https://joseluistd1104.github.io/web-personal/pages/Publicaciones/Que_es_hashing_en_ciberseguridad.html" class="btn-ver-mas">Ver más</a>
+      </article>
+
+      <!-- Tarjeta 2 -->
+      <article class="tarjeta-publicacion">
+        <h2>Datos de Spotify con Python</h2>
+        <p><span class="icono">📅</span> <span class="fecha">2025-04-16</span></p>
+        <p><span class="icono">🏷️</span> <span class="categoria">Análisis de datos</span></p>
+        <a href="https://joseluistd1104.github.io/web-personal/pages/Publicaciones/Datos_de_Spotify_con_Python.html" class="btn-ver-mas">Ver más</a>
+      </article>
+
+      <!-- Tarjeta 3 -->
+      <article class="tarjeta-publicacion">
+        <h2>Redes neuronales para principiantes</h2>
+        <p><span class="icono">📅</span> <span class="fecha">2025-03-27</span></p>
+        <p><span class="icono">🏷️</span> <span class="categoria">IA</span></p>
+        <a href="https://joseluistd1104.github.io/web-personal/pages/Publicaciones/Redes_neuronales_para_principiantes.html" class="btn-ver-mas">Ver más</a>
+      </article>
+    </section>
+
+    <!-- Mensaje si no hay resultados -->
+    <div id="mensajeSinResultados" class="mensaje-error-busqueda" style="display: none;">
+      No se encontró la búsqueda solicitada.
+    </div>
+  </main>
+
+  <!-- Script para el filtrado -->
+  <script src="https://joseluistd1104.github.io/web-personal/scripts/Ver_todos_los_proyectos_publicaciones.js"></script>
+</body>
+</html>

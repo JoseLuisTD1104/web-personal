@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Título de la Publicación</title>
+  <title>Datos de Spotify con Python</title>
   <link rel="stylesheet" href="https://joseluistd1104.github.io/web-personal/styles/Publicaciones.css" />
 </head>
 <body>
@@ -12,19 +12,16 @@
   <header>
     <div class="navbar-wrapper">
       <nav class="navbar">
-        <!-- Logo -->
         <div class="nav-left">
           <div class="Logo">
             <img src="https://joseluistd1104.github.io/web-personal/content/images/Logo.png" alt="Logo">
           </div>
         </div>
 
-        <!-- Enlace Inicio solo en móvil/tablet -->
         <div class="nav-inicio-mobile">
           <a href="#inicio" class="nav-inicio">Inicio</a>
         </div>
 
-        <!-- Enlaces -->
         <div class="nav-center">
           <ul class="nav-links">
             <li><a href="https://joseluistd1104.github.io/web-personal/index.html#inicio" class="nav-inicio-desktop">Inicio</a></li>
@@ -35,7 +32,6 @@
           </ul>
         </div>
 
-        <!-- Menú hamburguesa -->
         <div class="nav-right">
           <button class="nav-toggle" aria-label="Abrir menú">
             <span></span><span></span><span></span>
@@ -45,8 +41,8 @@
     </div>
   </header>
 
-  <!-- Hero con imagen oscura y texto encima -->
-  <header class="hero-publicacion" style="background-image: url('https://joseluistd1104.github.io/web-personal/content/images/Publicaciones/hero-content/Datos-de-Spotify-con-Python-16-abril-2025/Datos_de_Spotify_con_Python_16_abril_2025\ .jpg">
+  <!-- Hero -->
+  <header class="hero-publicacion" style="background-image: url('https://joseluistd1104.github.io/web-personal/content/images/Publicaciones/hero-content/Datos-de-Spotify-con-Python-16-abril-2025/Datos_de_Spotify_con_Python_16_abril_2025.jpg')">
     <div class="overlay"></div>
     <div class="contenido-hero">
       <p class="categoria">#IA</p>
@@ -57,55 +53,73 @@
 
   <!-- Contenido principal -->
   <main class="contenido-publicacion">
-    <article  class="publicacion-articulo">
-      <p>
-        Las redes neuronales son una de las bases fundamentales del aprendizaje profundo (deep learning).
-        En esta publicación, te mostraré cómo funcionan, sus componentes esenciales y un ejemplo simple con Python.
-      </p>
+    <article class="publicacion-articulo">
+      <p>Hola a todos. En esta nueva publicación quiero compartir un tema práctico y muy interesante para quienes desean aplicar Python al análisis de datos reales: cómo trabajar con datos de Spotify. Elegí este tema porque permite combinar la programación con el análisis musical, y representa una excelente forma de introducirse al uso de APIs y visualización de datos. Además, Spotify ofrece una API pública muy completa que nos permite acceder a información útil como canciones, artistas, géneros, duración, popularidad y mucho más.</p>
 
-      <figure>
-        <img src="/content/images/Publicaciones/content page/Datos de Spotify con Python I16 abril 2025/Datos de Spotify con Python I16 abril 2025 Imagen 1 Post.png" alt="Ejemplo de red neuronal" style="width: 100%; border-radius: 8px;" />
-        <center><figcaption>Ejemplo visual de una red neuronal artificial</figcaption></center>
-      </figure>
-    
-      <h2>¿Cómo funcionan?</h2>
-      <p>
-        Están compuestas por capas de "neuronas" conectadas entre sí. Cada neurona recibe entradas, las procesa mediante una función de activación y genera una salida que se transmite a otras neuronas.
-      </p>
-    
-      <h3>Capas comunes:</h3>
+      <h2>¿Qué es la API de Spotify?</h2>
+      <p>La API de Spotify (Spotify Web API) es una interfaz que permite acceder programáticamente a la información del catálogo de Spotify. Con ella, es posible obtener datos sobre pistas, álbumes, listas de reproducción, artistas, e incluso información de usuarios, como sus canciones favoritas o listas creadas, siempre que se tenga autorización adecuada.</p>
+
+      <p>Para usarla, necesitas:</p>
       <ul>
-        <li><strong>Capa de entrada:</strong> recibe los datos iniciales.</li>
-        <li><strong>Capas ocultas:</strong> realizan el procesamiento complejo.</li>
-        <li><strong>Capa de salida:</strong> entrega el resultado final.</li>
+        <li>Crear una cuenta de desarrollador en <a href="https://developer.spotify.com" target="_blank">Spotify for Developers</a>.</li>
+        <li>Crear una aplicación para obtener tus claves de acceso (client ID y client secret).</li>
+        <li>Usar una biblioteca de Python como <code>spotipy</code>, que simplifica las solicitudes HTTP y el manejo de tokens.</li>
       </ul>
-    
-      <!-- Espacio para insertar un video de YouTube -->
-      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 1.5rem; border-radius: 8px;">
-        <iframe src="https://www.youtube.com/embed/aircAruvnKk" 
-                title="Redes neuronales explicadas para principiantes"
-                frameborder="0" 
-                allowfullscreen 
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-        </iframe>
-      </div>
-    
-      <h2>¿Para qué se utilizan?</h2>
-      <p>
-        Las redes neuronales se aplican en diversas áreas como el reconocimiento de voz, visión por computadora, análisis de datos, predicciones financieras y mucho más.
-      </p>
-    
-      <!-- Espacio para una segunda imagen -->
-      <figure>
-        <img src="/content/images/Publicaciones/content page/Datos de Spotify con Python I16 abril 2025/Datos de Spotify con Python I16 abril 2025 Imagen 2 Post.webp" alt="Aplicaciones de las redes neuronales" style="width: 100%; border-radius: 8px;" />
-        <center><figcaption>Aplicaciones comunes de redes neuronales en la vida real</figcaption></center>
-      </figure>
-    
-      <h2>¿Cómo comenzar a aprender?</h2>
-      <p>
-        Puedes empezar por entender la lógica básica detrás de las funciones de activación, pérdida y entrenamiento. Existen muchas librerías como <code>TensorFlow</code> y <code>PyTorch</code> que facilitan su implementación.
-      </p>
-    
+
+      <h2>Configuración inicial con Python</h2>
+      <p>Antes de realizar cualquier consulta, es necesario instalar y configurar la biblioteca <code>spotipy</code>:</p>
+      <pre><code>pip install spotipy</code></pre>
+
+      <p>Y luego autenticarte:</p>
+      <pre><code>
+import spotipy
+from spotipy.oauth2 import SpotifyClientCredentials
+
+sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
+    client_id="TU_CLIENT_ID",
+    client_secret="TU_CLIENT_SECRET"
+))
+      </code></pre>
+
+      <h2>¿Qué tipo de datos se pueden obtener?</h2>
+      <p>Con la API puedes obtener múltiples atributos musicales de una canción, como:</p>
+      <ul>
+        <li><code>name</code>: nombre de la canción</li>
+        <li><code>artists</code>: artista(s) que la interpretan</li>
+        <li><code>popularity</code>: nivel de popularidad</li>
+        <li><code>duration_ms</code>: duración en milisegundos</li>
+        <li><code>explicit</code>: si contiene lenguaje explícito</li>
+        <li><code>danceability</code>, <code>energy</code>, <code>valence</code>: métricas sobre su carácter musical</li>
+      </ul>
+
+      <p>Ejemplo de búsqueda:</p>
+      <pre><code>track = sp.search(q='track:Blinding Lights artist:The Weeknd', type='track')</code></pre>
+
+      <h2>¿Cómo se visualiza la información?</h2>
+      <p>Con librerías como <code>pandas</code>, <code>seaborn</code> y <code>matplotlib</code> puedes visualizar relaciones entre datos, como energía y popularidad:</p>
+      <pre><code>
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Supongamos que ya tienes una lista de canciones
+df = pd.DataFrame(canciones)
+
+sns.scatterplot(data=df, x='energy', y='popularity')
+plt.title('Relación entre energía y popularidad')
+plt.show()
+      </code></pre>
+
+      <h2>Aplicaciones prácticas</h2>
+      <ul>
+        <li>Análisis musical de tus artistas favoritos</li>
+        <li>Comparaciones entre géneros</li>
+        <li>Estudios de evolución musical</li>
+        <li>Visualizaciones para presentaciones o dashboards</li>
+      </ul>
+
+      <h2>Conclusión</h2>
+      <p>Trabajar con los datos de Spotify usando Python es una excelente oportunidad para desarrollar habilidades en ciencia de datos, análisis musical y consumo de APIs. Es un proyecto que combina creatividad con técnica, y que puede escalar desde experimentos simples hasta análisis complejos y visuales impactantes. Aprender a obtener, procesar y visualizar estos datos te permite crear proyectos dinámicos y actuales que puedes integrar fácilmente a tu portafolio profesional.</p>
     </article>
   </main>
 
@@ -113,9 +127,7 @@
     <!-- Puedes reutilizar tu footer actual aquí -->
   </footer>
 
-  <!-- Script del menú hamburguesa -->
   <script src="../../script.js" defer></script>
-
 
 </body>
 </html>

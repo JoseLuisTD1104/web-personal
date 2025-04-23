@@ -57,56 +57,40 @@
 
   <!-- Contenido principal -->
   <main class="contenido-publicacion">
-    <article  class="publicacion-articulo">
-      <p>
-        Las redes neuronales son una de las bases fundamentales del aprendizaje profundo (deep learning).
-        En esta publicación, te mostraré cómo funcionan, sus componentes esenciales y un ejemplo simple con Python.
-      </p>
-
-      <figure>
-        <img src="/content/images/Publicaciones/content page/Qué es el hashing en ciberseguridad 16-abril-2025/Qué es el hashing en ciberseguridad 16-abril-2025 Imagen 1 post.png" alt="Ejemplo de red neuronal" style="width: 100%; border-radius: 8px;" />
-        <center><figcaption>Ejemplo visual de una red neuronal artificial</figcaption></center>
-      </figure>
+    <article class="publicacion-articulo">
+      <p><strong>Hola a todos.</strong> El día de hoy me gustaría hablar sobre un tema que me parece fundamental en el mundo de la ciberseguridad: el hashing. Creo que es crucial compartir este conocimiento, ya que el hashing es una pieza clave en muchos de los mecanismos que usamos a diario para proteger nuestra información digital, y comprenderlo es esencial para cualquier persona interesada en la seguridad informática.</p>
     
-      <h2>¿Cómo funcionan?</h2>
-      <p>
-        Están compuestas por capas de "neuronas" conectadas entre sí. Cada neurona recibe entradas, las procesa mediante una función de activación y genera una salida que se transmite a otras neuronas.
-      </p>
+      <p><strong>El hashing</strong> es una técnica criptográfica que convierte cualquier tipo de información en una serie de caracteres de tamaño fijo, conocido como hash. Esta conversión se lleva a cabo mediante una operación matemática llamada función hash. A diferencia del cifrado, el hashing no busca ser reversible; su propósito es representar los datos de manera única y segura, sin necesidad de descifrarlos posteriormente.</p>
     
-      <h3>Capas comunes:</h3>
+      <h2>Una buena función hash debe tener las siguientes propiedades:</h2>
       <ul>
-        <li><strong>Capa de entrada:</strong> recibe los datos iniciales.</li>
-        <li><strong>Capas ocultas:</strong> realizan el procesamiento complejo.</li>
-        <li><strong>Capa de salida:</strong> entrega el resultado final.</li>
+        <li><strong>Determinismo:</strong> Al aplicar la misma función hash a los mismos datos, siempre debe producir el mismo hash.</li>
+        <li><strong>Eficiencia:</strong> La función debe ser capaz de procesar los datos de forma rápida.</li>
+        <li><strong>Resistencia a colisiones:</strong> Debe ser muy difícil encontrar dos datos diferentes que produzcan el mismo hash.</li>
+        <li><strong>Resistencia a preimagen:</strong> No debe ser posible adivinar los datos originales a partir del hash.</li>
+        <li><strong>Resistencia a la segunda preimagen:</strong> Dado un dato y su hash, debe ser imposible encontrar otro dato diferente que genere el mismo hash.</li>
       </ul>
     
-      <!-- Espacio para insertar un video de YouTube -->
-      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-top: 1.5rem; border-radius: 8px;">
-        <iframe src="https://www.youtube.com/embed/aircAruvnKk" 
-                title="Redes neuronales explicadas para principiantes"
-                frameborder="0" 
-                allowfullscreen 
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-        </iframe>
-      </div>
+      <h2>En la práctica, el hashing se utiliza en muchos aspectos de la ciberseguridad, como:</h2>
+      <ul>
+        <li><strong>Almacenamiento de contraseñas:</strong> En lugar de guardar las contraseñas directamente, los sistemas guardan el hash de la contraseña. Al iniciar sesión, el sistema vuelve a calcular el hash de la contraseña que introduces y lo compara con el hash guardado.</li>
+        <li><strong>Verificación de la integridad de archivos:</strong> Al descargar un archivo, a menudo se proporciona su hash para que puedas comprobar que no ha sido modificado. Si el hash coincide, el archivo está intacto.</li>
+        <li><strong>Firmas digitales:</strong> El hashing se utiliza para generar un resumen del contenido que se firma, asegurando que no haya sido alterado desde el momento de la firma.</li>
+      </ul>
     
-      <h2>¿Para qué se utilizan?</h2>
-      <p>
-        Las redes neuronales se aplican en diversas áreas como el reconocimiento de voz, visión por computadora, análisis de datos, predicciones financieras y mucho más.
-      </p>
+      <h2>Algunas de las funciones hash más comunes en ciberseguridad son:</h2>
+      <ul>
+        <li><strong>MD5 (Message Digest 5):</strong> Aunque fue muy popular antes, ahora se considera insegura debido a su vulnerabilidad a colisiones.</li>
+        <li><strong>SHA-1 (Secure Hash Algorithm 1):</strong> También se está dejando de usar por problemas de seguridad.</li>
+        <li><strong>SHA-2 (y sus variantes como SHA-256 o SHA-512):</strong> Actualmente, son ampliamente utilizadas por su mayor seguridad.</li>
+        <li><strong>SHA-3:</strong> Diseñada como una alternativa segura con un diseño diferente, aunque no se usa tanto como SHA-2.</li>
+      </ul>
     
-      <!-- Espacio para una segunda imagen -->
-      <figure>
-        <img src="/content/images/Publicaciones/content page/Qué es el hashing en ciberseguridad 16-abril-2025/Qué es el hashing en ciberseguridad 16-abril-2025 Imagen 2 post.png" alt="Aplicaciones de las redes neuronales" style="width: 100%; border-radius: 8px;" />
-        <center><figcaption>Aplicaciones comunes de redes neuronales en la vida real</figcaption></center>
-      </figure>
+      <p>Es fundamental recordar que el hashing, por sí solo, no garantiza una seguridad total. Por eso, en el caso de las contraseñas, se suelen usar técnicas adicionales como el "salting", que consiste en añadir una cadena aleatoria única a cada contraseña antes de aplicar la función hash, lo que aumenta la protección contra ataques de diccionario o fuerza bruta.</p>
     
-      <h2>¿Cómo comenzar a aprender?</h2>
-      <p>
-        Puedes empezar por entender la lógica básica detrás de las funciones de activación, pérdida y entrenamiento. Existen muchas librerías como <code>TensorFlow</code> y <code>PyTorch</code> que facilitan su implementación.
-      </p>
-    
+      <p>En resumen, el "hashing" es crucial para resguardar la privacidad y asegurar la integridad de los datos. Usarlo adecuadamente robustece la seguridad de los sistemas y defiende la información delicada contra accesos indebidos o modificaciones. Entender el mecanismo de esta técnica y sus usos nos ayuda a comprender mejor la ciberseguridad contemporánea.</p>
     </article>
+    
   </main>
 
   <footer class="footer-nuevo">
