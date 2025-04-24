@@ -1,0 +1,17 @@
+----------------------------------------
+        ESCANEO DE RED LOCAL
+         Rango: 192.168.1.0/24
+----------------------------------------
+
+Dispositivos activos detectados:
+
+[+] 192.168.1.1  - Gateway principal
+[+] 192.168.1.10 - Laptop-Jose
+[+] 192.168.1.15 - Dispositivo desconocido
+[+] 192.168.1.21 - Impresora-Oficina
+[+] 192.168.1.34 - SmartTV-Sala
+
+Escaneo finalizado correctamente.
+Tiempo estimado: 3.42 segundos
+IPs analizadas: 254
+----------------------------------------

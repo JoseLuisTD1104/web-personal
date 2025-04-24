@@ -1,0 +1,33 @@
+# ============================================================================
+# Proyecto: Clasificador de Sentimientos
+# Autoría: Trabajo académico sin atribución específica
+# Año: 2025
+# Descripción: Este archivo define las dependencias necesarias para ejecutar
+#              el script de análisis de sentimientos basado en palabras clave.
+# ============================================================================
+
+# --------------------
+# Requisitos técnicos
+# --------------------
+# Lenguaje: Python 3.6 o superior
+
+# Librerías requeridas:
+pandas
+
+# --------------------
+# Instrucciones para instalación
+# --------------------
+# 1. Asegúrate de tener Python 3 instalado.
+# 2. Instala las dependencias ejecutando:
+#    pip install -r requirements.txt
+
+# --------------------
+# Notas adicionales
+# --------------------
+# - El script utiliza datos simulados ubicados en /model/
+# - Los resultados generados se almacenan en /outputs/
+# - No se requiere conexión a internet ni uso de modelos de machine learning
+
+# --------------------
+# Fin del archivo
+# --------------------

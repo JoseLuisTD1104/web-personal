@@ -1,0 +1,160 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clasificador de sentimientos</title>
+  <link rel="stylesheet" href="https://joseluistd1104.github.io/web-personal/styles/Proyectos.css">
+</head>
+<body>
+
+        <div class="navbar-wrapper">
+          <nav class="navbar">
+            <!-- Logo -->
+            <div class="nav-left">
+              <div class="Logo">
+                <img src="https://joseluistd1104.github.io/web-personal/content/images/Logo.png" alt="Logo">
+              </div>
+            </div>
+    
+            <!-- Enlace Inicio solo en móvil/tablet -->
+            <div class="nav-inicio-mobile">
+              <a href="#inicio" class="nav-inicio">Inicio</a>
+            </div>
+    
+            <!-- Enlaces -->
+            <div class="nav-center">
+              <ul class="nav-links">
+                <li><a href="https://joseluistd1104.github.io/web-personal/index.html#inicio" class="nav-inicio-desktop">Inicio</a></li>
+                <li><a href="https://joseluistd1104.github.io/web-personal/index.html#publicaciones">Publicaciones</a></li>
+                <li><a href="https://joseluistd1104.github.io/web-personal/index.html#proyectos">Proyectos</a></li>
+                <li><a href="https://joseluistd1104.github.io/web-personal/index.html#sobremi">Sobre mí</a></li>
+                <li><a href="https://joseluistd1104.github.io/web-personal/index.html#footer">Contacto</a></li>
+              </ul>
+            </div>
+    
+            <!-- Menú hamburguesa -->
+            <div class="nav-right">
+              <button class="nav-toggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+              </button>
+            </div>
+          </nav>
+        </div>
+   
+
+    <header class="hero-publicacion" style="background-image: url('https://joseluistd1104.github.io/web-personal/content/images/Proyectos/content-hero/Clasificador_de_sentimientos/clasificador_sentimientos.jpg">
+    <div class="overlay"></div>
+    <div class="contenido-hero">
+      <p class="categoria">#IA</p>
+      <h1 class="titulo-publicacion">Clasificador de sentimientos</h1>
+      <p class="autor">Publicación: Jose Luis • 16 abril 2025</p>
+    </div>
+  </header>
+
+  <main class="contenido-publicacion">
+    <!-- Breve descripción -->
+    <article>
+      <p>
+        <strong> Clasificador de Sentimientos </strong> es un proyecto desarrollado en Python que simula el análisis de frases para determinar si el sentimiento expresado es positivo, negativo o neutral. Aunque no utiliza un modelo de inteligencia artificial, este proyecto está estructurado para representar cómo funcionaría un sistema básico de clasificación textual, mostrando resultados simulados de manera controlada.
+      </p>
+      <p>
+        <strong> El objetivo principal </strong> es demostrar la organización profesional de un proyecto técnico, integrando buenas prácticas como la separación de archivos, el uso de bibliotecas estándar como pandas y la generación de salidas estructuradas. Este tipo de herramienta puede ser útil en escenarios reales para analizar opiniones, reseñas o comentarios en plataformas digitales.
+      </p>
+      <!-- Vista tipo GitHub -->
+      <div class="estructura-github">
+        <ul class="file-list">
+          <li onclick="toggle(this)">📁 Model
+            <ul class="nested">
+              <li data-path="https://joseluistd1104.github.io/web-personal/content/Projects/clasificador-sentimientos/model/datos_simulados.csv" onclick="verArchivo(this)">📄 Datos_simulados.csv</li>
+            </ul>
+          </li>
+          <li onclick="toggle(this)">📁 Outputs
+            <ul class="nested">
+              <li data-path="https://joseluistd1104.github.io/web-personal/content/Projects/clasificador-sentimientos/outputs/resultados.txt" onclick="verArchivo(this)">📄 Resultados.txt</li>
+            </ul>
+          </li>
+          <li onclick="toggle(this)">📁 src
+            <ul class="nested">
+              <li data-path="https://joseluistd1104.github.io/web-personal/content/Projects/clasificador-sentimientos/src/clasificador.py" onclick="verArchivo(this)">📄 Clasificador.py</li>
+            </ul>
+          </li>
+          <li data-path="https://joseluistd1104.github.io/web-personal/content/Projects/clasificador-sentimientos/requirements.txt" onclick="verArchivo(this)">📄 Requeriments.txt</li>
+         
+        </ul>
+      </div>
+    </article>
+
+    <!-- Sección de pestañas -->
+    <section class="seccion-tabs">
+      <div class="tabs">
+        <button class="tab active" onclick="mostrarContenido('readme')">📄 Descripción</button>
+        <button class="tab" onclick="mostrarContenido('license')">⚖️ Licencia</button>
+      </div>
+
+      <div class="tab-content" id="readme" style="display: block;">
+        <h1>⚙️ ¿Cómo funciona?</h1>
+        <p>
+            El script utiliza la biblioteca pandas para cargar un archivo CSV que contiene frases y, mediante un conjunto de palabras clave predeterminadas, simula la clasificación del sentimiento en tres categorías: positivo, negativo y neutral. El análisis se realiza revisando si las frases contienen términos asociados a cada sentimiento, como "excelente" o "horrible".
+
+            Una vez clasificado cada registro, el script genera un archivo de salida con los resultados simulados. Este proceso no requiere entrenamiento previo ni modelos de machine learning, lo que lo hace rápido y accesible para demostrar cómo se podría estructurar un flujo de análisis de texto de manera sencilla.
+
+        <h2>🎯 Objetivos del proyecto</h2>
+        <ul>
+          <li>Simular un sistema de análisis de sentimientos básico.</li>
+          <li>Mostrar cómo estructurar un proyecto en Python para tareas de procesamiento de texto.</li>
+          <li>Aplicar lógica de palabras clave para clasificaciones simples.</li>
+          <li>Documentar resultados en archivos externos de forma organizada.</li>
+          <li>Cumplir con estándares de presentación profesional para proyectos técnicos académicos.</li>
+        </ul>
+
+        <h2>🧠 Conocimientos aplicados</h2>
+        <p>Este proyecto aplica conocimientos fundamentales en el área de análisis de datos y procesamiento de texto:</p>
+        <ul>
+          <li>Lectura y manipulación de archivos CSV con panda</li>
+          <li>Búsqueda de palabras clave dentro de cadenas de texto.</li>
+          <li>Clasificación condicional de datos.</li>
+          <li>Escritura estructurada de resultados en archivos de texto.</li>
+          <li>Separación modular de archivos y carpetas por función..</li>
+        </ul>
+
+        <h2>🛠 Tecnologías utilizadas</h2>
+        <ul>
+          <li>Lenguaje: Python 3.x</li>
+          <li>Librerías: pandas</li>
+          <li>Formato de datos: CSV </li>
+          <li>Modo de ejecución: Script desde consola</li>
+        </ul>
+        
+        <h2>🚫 Advertencia</h2>
+        <p>Este proyecto es una simulación académica. No utiliza algoritmos de procesamiento de lenguaje natural ni modelos de aprendizaje automático. Los resultados se generan únicamente con base en la presencia de palabras clave, y no representan un análisis semántico profundo. Está destinado exclusivamente a fines educativos y demostrativos.</p>
+      
+        <h2>✅ Conclusión</h2>
+        <p>El Clasificador de Sentimientos es un proyecto simulado que demuestra cómo se puede aplicar lógica sencilla para analizar texto, estructurar resultados y presentar un flujo técnico completo usando Python. Su valor reside en la organización profesional del código y la documentación del proceso, lo que lo convierte en una excelente pieza para incluir en un portafolio académico.</p>
+      
+      </div>
+
+      <div class="tab-content" id="license" style="display: none;">
+        <pre>
+          
+LICENCIA DE USO ACADÉMICO
+
+Este proyecto fue creado con fines exclusivamente educativos y no comerciales.
+                      
+Su propósito es simular la estructura y funcionamiento de una herramienta técnica dentro del contexto de formación académica, sin que ello implique propiedad intelectual sobre el contenido generado. 
+                       
+Se permite su libre uso, copia, modificación y distribución para tareas educativas, siempre que no se utilice con fines comerciales ni se reclame como creación original para publicaciones, concursos o software profesional. 
+                      
+Este material puede ser eliminado o archivado tras su revisión o evaluación.
+                      
+Año: 2025
+Autoría: Trabajo académico sin atribución específica
+            
+        </pre>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://joseluistd1104.github.io/web-personal/scripts/Proyectos.js"></script>
+
+</body>
+</html>

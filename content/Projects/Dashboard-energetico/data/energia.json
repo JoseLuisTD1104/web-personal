@@ -1,0 +1,38 @@
+[
+    {
+      "fecha": "2025-04-01",
+      "iluminacion": 120,
+      "aire_acondicionado": 300,
+      "maquinaria": 450,
+      "oficinas": 200
+    },
+    {
+      "fecha": "2025-04-02",
+      "iluminacion": 110,
+      "aire_acondicionado": 320,
+      "maquinaria": 470,
+      "oficinas": 190
+    },
+    {
+      "fecha": "2025-04-03",
+      "iluminacion": 130,
+      "aire_acondicionado": 290,
+      "maquinaria": 460,
+      "oficinas": 210
+    },
+    {
+      "fecha": "2025-04-04",
+      "iluminacion": 125,
+      "aire_acondicionado": 310,
+      "maquinaria": 480,
+      "oficinas": 205
+    },
+    {
+      "fecha": "2025-04-05",
+      "iluminacion": 115,
+      "aire_acondicionado": 295,
+      "maquinaria": 455,
+      "oficinas": 195
+    }
+  ]
+  

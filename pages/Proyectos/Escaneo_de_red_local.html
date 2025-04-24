@@ -43,12 +43,12 @@
         </div>
    
 
-    <header class="hero-publicacion" style="background-image: url('https://joseluistd1104.github.io/web-personal/content/images/Proyectos/content-hero/Escaneo-de-red-local-16-abril-2025/Escaneo_de_red_local_16-abril-2025.png')">
+    <header class="hero-publicacion" style="background-image: url('https://joseluistd1104.github.io/web-personal/content/images/Proyectos/content-hero/Escaneo-de-red-local-16-abril-2025/Escaner_local.jpg')">
     <div class="overlay"></div>
     <div class="contenido-hero">
       <p class="categoria">#IA</p>
-      <h1 class="titulo-publicacion">Dashboard energético</h1>
-      <p class="autor">por Jose Luis • 16 abril 2025</p>
+      <h1 class="titulo-publicacion">Escaneo de red local</h1>
+      <p class="autor">Publicación: Jose Luis • 16 abril 2025</p>
     </div>
   </header>
 
@@ -56,33 +56,25 @@
     <!-- Breve descripción -->
     <article>
       <p>
-        Dashboard energético es una herramienta interactiva diseñada para visualizar y analizar el consumo de energía de forma clara y eficiente. Este proyecto permite monitorear métricas clave como el uso diario, mensual y por categoría de dispositivos, facilitando la toma de decisiones orientadas al ahorro energético y la sostenibilidad. Gracias a sus visualizaciones dinámicas y su estructura intuitiva, el dashboard es ideal tanto para usuarios individuales como para empresas que buscan optimizar su eficiencia energética.
+        <strong>Escáner de Red Local</strong> es un proyecto desarrollado en Python que simula el proceso de detección de dispositivos activos dentro de una red local. Aunque no realiza un escaneo real, este proyecto está estructurado para representar cómo funcionaría una herramienta básica de análisis de red, mostrando resultados ficticios de manera controlada.
       </p>
-
+      <p>
+        <strong>El objetivo principal</strong> es demostrar la organización profesional de un proyecto técnico, integrando buenas prácticas como separación de archivos, documentación y simulación de salida por consola. Este tipo de herramienta puede ser útil en escenarios reales para identificar dispositivos conectados a una red, verificar conexiones sospechosas o realizar auditorías internas.
+      </p>
       <!-- Vista tipo GitHub -->
       <div class="estructura-github">
         <ul class="file-list">
-          <li onclick="toggle(this)">📁 .github
-            <ul class="nested">
-              <li data-path="/archivos/ISSUE_TEMPLATE.md" onclick="verArchivo(this)">📄 ISSUE_TEMPLATE.md</li>
-              <li data-path="/archivos/CONTRIBUTING.md" onclick="verArchivo(this)">📄 CONTRIBUTING.md</li>
-            </ul>
-          </li>
           <li onclick="toggle(this)">📁 src
             <ul class="nested">
-              <li data-path="/archivos/app.py" onclick="verArchivo(this)">📄 app.py</li>
-              <li data-path="/archivos/agents.py" onclick="verArchivo(this)">📄 agents.py</li>
-              <li onclick="toggle(this)">📁 utils
-                <ul class="nested">
-                  <li data-path="/archivos/helpers.py" onclick="verArchivo(this)">📄 helpers.py</li>
-                  <li data-path="/archivos/logger.py" onclick="verArchivo(this)">📄 logger.py</li>
-                </ul>
-              </li>
+              <li data-path="https://joseluistd1104.github.io/web-personal/content/Projects/Escaneo-red-local/src/escaneo.py" onclick="verArchivo(this)">📄 Escaneo.py/li>
             </ul>
           </li>
-          <li data-path="https://joseluistd1104.github.io/web-personal/content/Files/Readme.txt" onclick="verArchivo(this)">📄 README.md</li>
-          <li data-path="/archivos/LICENSE" onclick="verArchivo(this)">📄 LICENSE</li>
-          <li data-path="/archivos/pyproject.toml" onclick="verArchivo(this)">📄 pyproject.toml</li>
+          <li onclick="toggle(this)">📁 docs
+            <ul class="nested">
+              <li data-path="https://joseluistd1104.github.io/web-personal/content/Projects/Escaneo-red-local/docs/resultados.txt" onclick="verArchivo(this)">📄 Resultados.txt</li>
+            </ul>
+          </li>
+          <li data-path="https://joseluistd1104.github.io/web-personal/content/Projects/Escaneo-red-local/requeriments.txt" onclick="verArchivo(this)">📄 Requeriments.txt</li>
         </ul>
       </div>
     </article>
@@ -95,26 +87,66 @@
       </div>
 
       <div class="tab-content" id="readme" style="display: block;">
+        <h1>⚙️ ¿Cómo funciona?</h1>
         <p>
-            Este proyecto tiene como objetivo ofrecer una visualización clara e interactiva del consumo energético en tiempo real. A través de gráficos dinámicos y métricas detalladas, el dashboard permite identificar patrones de uso, detectar anomalías y fomentar decisiones informadas para un consumo más eficiente y sostenible.
+          El script utiliza el módulo socket de la biblioteca estándar de Python para intentar establecer una conexión con cada dirección IP dentro de un rango definido, en este caso la subred 192.168.1.0/24, que es común en redes domésticas o pequeñas oficinas.
+
+          Para acelerar el proceso, se implementa concurrencia mediante ThreadPoolExecutor, lo que permite escanear múltiples direcciones IP al mismo tiempo. Esto hace que el escaneo sea más eficiente y rápido, simulando un comportamiento cercano al de herramientas profesionales como nmap.
+          
+          Cada vez que una IP responde exitosamente a una conexión (por ejemplo, en el puerto 80), se considera que ese dispositivo está activo en la red, y el script lo registra como detectado.
         </p>
+
+        <h2>🎯 Objetivos del proyecto</h2>
         <ul>
-          <li>✅ Monitorización en tiempo real del consumo energético</li>
-          <li>📊 Visualización por zonas, dispositivos o periodos de tiempo</li>
-          <li>🌱 Foco en eficiencia y sostenibilidad energética</li>
-          <li>⚙️ Integración con sensores y datos históricos</li>
+          <li>Simular un escáner funcional de red local.</li>
+          <li>Mostrar cómo organizar un proyecto en Python de manera profesional.</li>
+          <li>Aplicar conceptos de red, concurrencia y estructura de scripts en la práctica.</li>
+          <li>Documentar correctamente un desarrollo técnico dentro de un portafolio profesional.</li>
+          <li>Cumplir con los estándares de presentación para evaluación académica.</li>
         </ul>
+
+        <h2>🧠 Conocimientos aplicados</h2>
+        <p>Este proyecto involucra varios conceptos clave en el ámbito de la programación y las redes:</p>
+        <ul>
+          <li>Conceptos de direccionamiento IP (IPv4).</li>
+          <li>Uso de socket para conexiones de red.</li>
+          <li>Ejecución en paralelo con hilos (concurrent.futures).</li>
+          <li>Automatización de tareas mediante scripts.</li>
+          <li>Estructuración profesional de proyectos.</li>
+          <li>Redacción técnica de documentación (README, requirements.txt).</li>
+        </ul>
+
+        <h2>🛠 Tecnologías utilizadas</h2>
+        <ul>
+          <li>Lenguaje: Python 3.x</li>
+          <li>Librerías: socket, ipaddress, concurrent.futures (todas estándar)</li>
+          <li>Sistema operativo compatible: Windows, Linux, macOS (requiere permisos de red abiertos)</li>
+        </ul>
+        
+        <h2>🚫 Advertencia</h2>
+        <p>Este proyecto es una simulación académica. Aunque el script puede ejecutarse y producir resultados reales en entornos compatibles, no está diseñado para entornos productivos o corporativos, ni utiliza técnicas avanzadas como escaneo ARP, ping ICMP o identificación de puertos específicos.</p>
+      
+        <h2>✅ Conclusión</h2>
+        <p>El escáner de red local simulado es una demostración clara de cómo se puede construir una herramienta útil con pocos recursos y buena organización. Este proyecto no solo representa un ejercicio técnico, sino también un ejemplo de cómo documentar, presentar y estructurar un desarrollo de forma profesional, lo cual es esencial tanto en contextos académicos como en el mundo laboral.</p>
+      
       </div>
 
       <div class="tab-content" id="license" style="display: none;">
         <pre>
-MIT License
+          
+LICENCIA DE USO ACADÉMICO
 
-Copyright (c) 2025 
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the “Software”), to deal
-in the Software without restriction...
+Este proyecto fue creado con fines exclusivamente educativos y no comerciales.
+          
+Su propósito es simular la estructura y funcionamiento de una herramienta técnica dentro del contexto de formación académica, sin que ello implique propiedad intelectual sobre el contenido generado.
+          
+Se permite su libre uso, copia, modificación y distribución para tareas educativas, siempre que no se utilice con fines comerciales ni se reclame como creación original para publicaciones, concursos o software profesional.
+          
+Este material puede ser eliminado o archivado tras su revisión o evaluación.
+          
+Año: 2025
+Autoría: Trabajo académico sin atribución específica
+          
 
         </pre>
       </div>

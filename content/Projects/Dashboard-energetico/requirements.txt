@@ -1,0 +1,32 @@
+# Proyecto: Dashboard Energético
+# Año: 2025
+# Este proyecto es de tipo frontend y no requiere instalación de librerías en Python.
+
+# Requisitos:
+
+# Lenguajes:
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+
+# Librerías utilizadas:
+- Chart.js (vía CDN)
+
+# Instrucciones para ejecución local:
+1. Abrir un navegador moderno (Chrome, Firefox, Edge, etc.)
+2. Asegúrate de tener la siguiente estructura de archivos:
+   - /data/energia.json
+   - /js/dashboard.js
+   - /styles/dashboard.css
+3. Desde un entorno local, puedes abrir directamente el archivo HTML de prueba (fuera del proyecto)
+   o usar un servidor local:
+
+   En terminal:
+     python -m http.server 8000
+
+   Luego abre:
+     http://localhost:8000
+
+# Nota:
+- El archivo energia.json contiene datos simulados.
+- No se utiliza backend ni librerías de servidor.

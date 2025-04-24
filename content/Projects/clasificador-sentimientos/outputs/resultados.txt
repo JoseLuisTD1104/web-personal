@@ -1,0 +1,37 @@
+==================================================
+CLASIFICADOR DE SENTIMIENTOS - RESULTADOS SIMULADOS
+==================================================
+
+Frase: "Me encantó el servicio, fue excelente"
+Clasificación: Positivo
+
+Frase: "No me gustó la atención que recibí"
+Clasificación: Negativo
+
+Frase: "El producto está bien, pero no es nada especial"
+Clasificación: Neutral
+
+Frase: "Increíble experiencia, lo recomiendo totalmente"
+Clasificación: Positivo
+
+Frase: "El envío llegó tarde y mal empaquetado"
+Clasificación: Negativo
+
+Frase: "Está aceptable para lo que cuesta"
+Clasificación: Neutral
+
+Frase: "La calidad es excepcional, superó mis expectativas"
+Clasificación: Positivo
+
+Frase: "Todo mal, no volvería a comprar aquí"
+Clasificación: Negativo
+
+Frase: "Ni bien ni mal, fue una compra promedio"
+Clasificación: Neutral
+
+Frase: "Excelente trato por parte del equipo"
+Clasificación: Positivo
+
+--------------------------------------------------
+Total de frases analizadas: 10
+Positivas: 4 | Negativas: 3 | Neutrales: 3

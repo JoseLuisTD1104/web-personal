@@ -1,0 +1,50 @@
+# ============================================================================
+# Proyecto: Escáner de Red Local
+# Autoría: Trabajo académico sin atribución específica
+# Descripción: Este archivo define las dependencias necesarias para ejecutar
+#              el script de escaneo de red local desarrollado en Python.
+#              Este proyecto está diseñado para ejecutarse únicamente con
+#              módulos estándar del lenguaje Python, sin requerir paquetes
+#              de terceros ni entornos virtuales especiales.
+# ============================================================================
+
+# --------------------
+# Requisitos del sistema
+# --------------------
+# Este script está probado y es compatible con:
+# - Python 3.6 o superior
+# - Sistemas operativos: Linux, macOS, Windows (puede requerir ajustes en firewall)
+
+# --------------------
+# Dependencias del proyecto
+# --------------------
+# ✅ Librerías utilizadas:
+# - socket          → Para conexión TCP y escaneo básico de puertos
+# - ipaddress       → Para manejar rangos de IP (IPv4)
+# - concurrent.futures → Para ejecución en paralelo (ThreadPoolExecutor)
+
+# ❌ No se requiere instalación adicional
+# Todas las dependencias están incluidas en la biblioteca estándar de Python.
+
+# --------------------
+# Instalación recomendada
+# --------------------
+# No es necesario usar pip. Simplemente asegúrate de tener Python 3.x instalado.
+
+# Puedes verificarlo con:
+#   python --version
+
+# Y luego ejecutar el script con:
+#   python escaneo.py
+
+# --------------------
+# Entornos virtuales (opcional)
+# --------------------
+# Aunque este proyecto no lo requiere, puedes crear un entorno virtual si deseas mantener todo organizado:
+#   python -m venv venv
+#   source venv/bin/activate    (Linux/macOS)
+#   venv\\Scripts\\activate     (Windows)
+
+# --------------------
+# Fin del archivo
+# --------------------
