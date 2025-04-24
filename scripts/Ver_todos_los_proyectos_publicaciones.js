@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     filtroFecha.addEventListener("input", filtrar);
   });
   
+  
   document.addEventListener("DOMContentLoaded", () => {
     const toggle = document.querySelector(".nav-toggle");
     const navCenter = document.querySelector(".nav-center");
