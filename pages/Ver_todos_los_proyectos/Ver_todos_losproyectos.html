@@ -12,11 +12,14 @@
   <header>
     <div class="navbar-wrapper">
       <nav class="navbar">
+        <!-- Izquierda: Logo -->
         <div class="nav-left">
           <div class="Logo">
             <img src="https://joseluistd1104.github.io/web-personal/content/images/Logo.png" alt="Logo">
           </div>
         </div>
+  
+        <!-- Centro: enlaces (desktop) -->
         <div class="nav-center">
           <ul class="nav-links">
             <li><a href="https://joseluistd1104.github.io/web-personal/index.html#inicio">Inicio</a></li>
@@ -26,19 +29,25 @@
             <li><a href="https://joseluistd1104.github.io/web-personal/index.html#footer">Contacto</a></li>
           </ul>
         </div>
-      </nav>
-    </div>
-
-        <!-- Menú hamburguesa -->
-        <div class="nav-right">
-          <button class="nav-toggle" aria-label="Abrir menú">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
+  
+        <!-- “Inicio” móvil -->
+        <a href="https://joseluistd1104.github.io/web-personal/index.html#inicio"
+        class="nav-inicio-mobile"
+        style="color: #A2A2A2 !important; text-decoration: none !important;">
+       Inicio
+     </a>
+  
+        <!-- Botón hamburguesa -->
+        <button class="nav-toggle" aria-label="Abrir menú"
+          onclick="document.querySelector('.nav-center').classList.toggle('open')">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
     </div>
   </header>
-
+  
   <!-- Hero content con imagen de fondo -->
   <section class="hero-publicaciones">
     <div class="contenido-hero">
