@@ -102,5 +102,19 @@
 
   <!-- Script para el filtrado -->
   <script src="https://joseluistd1104.github.io/web-personal/scripts/Ver_todos_los_proyectos_publicaciones.js"></script>
+
+  <script>
+      document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.querySelector(".nav-toggle");
+    const navCenter = document.querySelector(".nav-center");
+  
+    if (toggle && navCenter) {
+      toggle.addEventListener("click", () => {
+        navCenter.classList.toggle("open");
+      });
+    }
+  });
+
+  </script>
 </body>
 </html>

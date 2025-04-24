@@ -45,17 +45,5 @@ document.addEventListener("DOMContentLoaded", function () {
     filtroCategoria.addEventListener("change", filtrar);
     filtroFecha.addEventListener("input", filtrar);
   });
-  
-  
-  document.addEventListener("DOMContentLoaded", () => {
-    const toggle = document.querySelector(".nav-toggle");
-    const navCenter = document.querySelector(".nav-center");
-  
-    if (toggle && navCenter) {
-      toggle.addEventListener("click", () => {
-        navCenter.classList.toggle("open");
-      });
-    }
-  });
 
   
